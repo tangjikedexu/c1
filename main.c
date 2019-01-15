@@ -7,10 +7,10 @@ int main()
 
     while (1)
     {
-        printf("1---cunqian");
-        printf("2---quqian");
-        printf("2---yu e");
-        printf("2---tuichu");
+        printf("1---cunqian\n");
+        printf("2---quqian\n");
+        printf("2---yu e\n");
+        printf("2---tuichu\n");
         printf("qingxuanzexiangyinggongnengbianhao\n");
 
         int code;
@@ -25,8 +25,8 @@ int main()
             printf("cunqianchenggong,dianjihuichejixu\n");
 
             char x;
-            scanf("%d", &x);
-            scanf("%d", &x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code = 2)
         {
