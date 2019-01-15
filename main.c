@@ -9,8 +9,8 @@ int main()
     {
         printf("1---cunqian\n");
         printf("2---quqian\n");
-        printf("2---yu e\n");
-        printf("2---tuichu\n");
+        printf("3---yu e\n");
+        printf("4---tuichu\n");
         printf("qingxuanzexiangyinggongnengbianhao\n");
 
         int code;
@@ -21,7 +21,7 @@ int main()
             printf("qingshucunchujine,dianjihuichejixu\n");
             int cun;
             scanf("%d", &cun);
-            cun += qian;
+            qian += cun;
             printf("cunqianchenggong,dianjihuichejixu\n");
 
             char x;
@@ -30,12 +30,38 @@ int main()
         }
         if (code = 2)
         {
+            printf("qingshuruquqianjine\n");
+            int qu;
+            scanf("%d", &qu);
+
+            if (qu > qian)
+            {
+                printf("yuebuzu,quqianshibai,dianjihuichejixu\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
+            else
+            {
+                qian -= qu;
+                printf("quqianchenggong,dianjihuichejixu\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
         }
         if (code = 3)
         {
+            printf("yuewei:\n");
+            printf("%d\n", qian);
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code = 4)
         {
+            printf("jieshu\n");
+            break;
         }
     }
 
